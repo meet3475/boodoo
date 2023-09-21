@@ -1,0 +1,861 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    font-size: 62.5%;
+}
+
+body {
+    font-family: 'Alegreya';
+}
+
+:root {
+    --primary-color: #C8191C;
+    --secondary-color: #fff;
+}
+
+ul {
+    list-style-type: none;
+}
+
+img {
+    max-width: 100%;
+    /* display: block; */
+}
+
+a {
+    text-decoration: none;
+
+}
+
+.comman-but {
+    display: flex;
+    width: 30rem;
+    height: 6.3rem;
+    background-color: #C8191C;
+    color: var(--secondary-color);
+    padding: 15px 10px;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+    font-size: 2.4rem;
+}
+
+.main-title {
+    color: var(--primary-color);
+    font-size: 2.4rem;
+    font-weight: 700;
+    text-transform: uppercase;
+}
+
+.sub-title {
+    margin-top: 1.8rem;
+    font-size: 84px;
+    font-weight: 700;
+    color: var(--secondary-color);
+    text-transform: uppercase;
+    line-height: 11rem;
+}
+
+section {
+    padding-top: 20rem;
+}
+
+/* ************************Header************************* */
+header {
+    width: 100%;
+    position: fixed;
+    top: 8rem;
+    z-index: 999999;
+}
+
+.navbar-expand-lg .navbar-nav .nav-link {
+    padding-right: 2.5rem;
+    padding-left: 2.5rem;
+    font-size: 1.8rem;
+
+}
+
+/* ******************************************************* */
+
+/* ************************Hero************************* */
+#hero {
+    width: 100%;
+    height: 100vh;
+    background: linear-gradient(180deg, #000 36.84%, #C8191C 223.16%);
+    position: relative;
+    padding-top: 0;
+
+}
+#hero .container {
+    position: relative;
+    z-index: 999;
+}
+
+#hero::before {
+    content: '';
+    background-image: url(../images/banner.png);
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-size: 100% auto;
+    background-repeat: no-repeat;
+    opacity: 0.1;
+}
+
+#hero h1 {
+    color: var(--secondary-color);
+    text-align: center;
+    font-size: 13rem;
+    font-weight: 700;
+    line-height: 16rem;
+    padding-top: 37.7rem;
+
+}
+
+#hero h1 span {
+    color: #C8191C;
+    font-size: 13rem;
+    font-weight: 700;
+    line-height: 16rem;
+}
+
+#hero p {
+    color: var(--secondary-color);
+    text-align: center;
+    font-size: 1.8rem;
+    font-weight: 400;
+    line-height: normal;
+    padding: 5.5rem 0;
+    max-width: 90.6rem;
+    margin: 0 auto;
+}
+
+/* ******************************************************* */
+
+/* *********************About************************ */
+#about {
+    background: linear-gradient(0deg, #000 16.49%, #C8191C 274.79%);
+
+}
+
+.about-image {
+    padding-top: 4.1rem;
+}
+
+.about-image h3 {
+    font-size: 5.4rem;
+    font-weight: 700;
+    text-transform: uppercase;
+    color: var(--secondary-color);
+    margin-top: 2rem;
+}
+
+.about-data {
+    margin-top: 20rem;
+}
+
+.about-pic img {
+    width: 100%;
+    height: 52rem;
+    object-fit: cover;
+    padding-right: 15rem;
+    border-right: 0.2rem solid white;
+}
+
+.about-pic p {
+    font-size: 1.8rem;
+    font-weight: 400;
+    color: var(--secondary-color);
+    margin-top: 6rem;
+    max-width: 54.1rem;
+}
+
+.about-des {
+    max-width: 57.4rem;
+}
+
+.about-des .sub-title {
+    margin-bottom: 10rem;
+}
+
+/* ******************************************************* */
+
+/* ***********************Super************************ */
+
+#super {
+    background: linear-gradient(180deg, #000 37.37%, #C8191C 231.27%);
+}
+
+.super-data h2 {
+    color: var(--secondary-color);
+    font-size: 12.5rem;
+    font-weight: 700;
+    margin-bottom: 11.5rem;
+}
+
+.super-data p {
+    color: var(--secondary-color);
+    font-size: 1.8rem;
+    font-weight: 400;
+    max-width: 48.5rem;
+}
+
+.super-img {
+    padding-left: 7rem;
+    padding-bottom: 6rem;
+}
+.super-team img {
+    width: 100%;
+    height: 30.5rem;
+    object-fit: cover;
+}
+
+.sup-team {
+    color: var(--secondary-color);
+    font-size: 14rem;
+    font-weight: 700;
+    margin-top: 0.9rem;
+    padding-left: 2rem;
+}
+
+/* ******************************************************* */
+
+/* ***********************Service************************ */
+#Service {
+    background: linear-gradient(0deg, #000 37.37%, #C8191C 231.27%);
+
+}
+
+#Service .main-title {
+    text-align: center;
+}
+
+#Service .sub-title {
+    text-align: center;
+}
+
+.service-detail {
+    row-gap: 15rem;
+    padding-top: 10rem;
+}
+
+#Service .col-md-6:nth-child(odd) {
+    padding: 0 7.5rem 0 4.2rem;
+}
+
+#Service .col-md-6:nth-child(even) {
+    padding: 0 4.2rem 0 7.5rem;
+}
+
+.service-data {
+    padding: 5rem 6rem;
+    border: 2px solid white;
+}
+
+.service-data img {
+    width: 100%;
+    height: 40rem;
+    object-fit: cover;
+}
+
+.service-data h3 {
+    color: var(--secondary-color);
+    font-size: 4.4rem;
+    font-weight: 700;
+    text-transform: uppercase;
+    margin-top: 5rem;
+    width: 100%;
+}
+
+.service-data p {
+    color: var(--secondary-color);
+    font-size: 1.8rem;
+    font-weight: 400;
+    margin-top: 2rem;
+}
+
+/* ******************************************************* */
+
+/* ***********************Why************************ */
+#why {
+    background: linear-gradient(180deg, #000 36.84%, #C8191C 223.16%);
+}
+
+#why .main-title {
+    text-align: center;
+}
+
+#why .sub-title {
+    text-align: center;
+}
+#why .row {
+    padding-top: 17.2rem;
+}
+.why-data h3 {
+    color: var(--secondary-color);
+    font-size: 3.2rem;
+    font-weight: 700;
+    text-transform: uppercase;
+    margin-top: 3rem;
+}
+
+.why-data p {
+    color: var(--secondary-color);
+    font-size: 18px;
+    font-weight: 400;
+    margin-top: 3rem;
+}
+
+/* ******************************************************* */
+
+/* *******************Horoscope**************************** */
+#Horoscope {
+    background: linear-gradient(0deg, #000 16.49%, #C8191C 274.79%);
+}
+
+#Horoscope .main-title {
+    text-align: center;
+}
+
+#Horoscope .sub-title {
+    text-align: center;
+}
+
+.horo-detail {
+    padding-top: 10rem;
+    column-gap: 10rem;
+}
+
+.horo-data h3 {
+    color: var(--secondary-color);
+    font-size: 5.4rem;
+    font-weight: 700;
+    text-transform: uppercase;
+}
+
+.horo-data p {
+    color: var(--secondary-color);
+    font-size: 18px;
+    font-weight: 400;
+    max-width: 16.5rem;
+}
+
+.horo-part {
+    padding: 10rem 0;
+    column-gap: 10rem;
+}
+
+.number-detail {
+    padding-top: 20rem;
+}
+
+.number-deta h5 {
+    color: var(--primary-color);
+    text-align: center;
+    font-size: 3.2rem;
+    font-weight: 700;
+    text-transform: uppercase;
+}
+
+.number-deta h3 {
+    color: var(--secondary-color);
+    font-size: 10rem;
+    font-weight: 700;
+    text-transform: uppercase;
+    text-align: center;
+}
+
+/* ******************************************************* */
+
+/* ************************Appointment******************** */
+#Appointment {
+    background: linear-gradient(180deg, #000 16.49%, #C8191C 274.79%);
+}
+
+#Appointment .main-title {
+    padding-top: 22rem;
+}
+
+.form-data:nth-child(odd) {
+    padding-right: 4rem;
+}
+
+.form-data:nth-child(even) {
+    padding-left: 4rem;
+}
+
+
+.form-data label {
+    color: var(--secondary-color);
+    font-size: 3.2rem;
+    font-weight: 700;
+    text-transform: uppercase;
+    margin-bottom: 3rem;
+}
+
+.form-data input{
+    padding: 3rem 3rem;
+    width: 100%;
+    background-color: transparent;
+    border: 2px solid white;
+    margin-bottom: 8rem;
+    font-size: 2.4rem;
+    font-weight: 400;
+    outline: none;
+
+}
+.form-data input::placeholder {
+    color: var(--secondary-color);
+}
+
+.form-data select {
+    padding: 3rem 3rem;
+    width: 100%;
+    background-color: transparent;
+    border: 2px solid white;
+    margin-bottom: 8rem;
+    font-size: 2.4rem;
+    font-weight: 400;
+    font-family: 'Alegreya';
+    outline: none;
+    color: var(--secondary-color);
+}
+
+.form-data option {
+    background-color: black;
+    font-size: 2.4rem;
+    color: #fff;
+}
+
+.Appointment-data .comman-but {
+    margin-bottom: 20rem;
+}
+
+/* ******************************************************* */
+
+/* ************************Membership******************** */
+#Membership {
+    background: linear-gradient(180deg, #514242 -74.63%, #2E0A0A 38.7%, #000 151.34%);
+    position: relative;
+    padding-top: 0;
+}
+#Membership .container {
+    position: relative;
+    z-index: 999;
+}
+
+#Membership::before {
+    content: '';
+    background-image: url(../images/membership.png);
+    position: absolute;
+    top: 0;
+    left: 15rem;
+    width: 85%;
+    height: 100%;
+    background-size: 100% auto;
+    background-repeat: no-repeat;
+    opacity: 0.1;
+}
+
+.membership-detail {
+    padding: 10rem 0;
+}
+
+.membership-detail h3 {
+    color: var(--secondary-color);
+    font-size: 8.4rem;
+    font-weight: 700;
+    text-transform: uppercase;
+}
+
+.membership-detail p {
+    color: var(--secondary-color);
+    font-size: 1.8rem;
+    font-weight: 400;
+    padding-top: 2rem;
+    padding-bottom: 5rem;
+}
+
+/* ******************************************************* */
+
+/* *******************Membership price******************* */
+#Membership-price {
+    background: linear-gradient(0deg, #000 16.49%, #C8191C 274.79%);
+}
+
+#Membership-price .main-title {
+    text-align: center;
+}
+
+#Membership-price .sub-title {
+    text-align: center;
+}
+
+.price-detail {
+    margin-top: 8rem;
+}
+
+.STARTER {
+    margin-right: 5rem;
+    padding: 6rem 7.7rem;
+    border: 2px solid white;
+}
+
+.STARTER p {
+    color: var(--secondary-color);
+    text-align: center;
+    font-size: 2.4rem;
+    font-weight: 700;
+    text-transform: uppercase;
+}
+
+.STARTER h3 {
+    color: var(--secondary-color);
+    font-size: 7.2rem;
+    font-weight: 700;
+    text-transform: uppercase;
+    margin: 3rem 0;
+}
+
+.STARTER .month {
+    color: var(--secondary-color);
+    font-size: 2.4rem;
+    font-weight: 600;
+    text-transform: uppercase;
+    margin: 3rem 0;
+
+}
+
+.STARTER-detail img {
+    margin-bottom: 2rem;
+}
+
+.STARTER-detail span {
+    display: inline-block;
+    color: var(--secondary-color);
+    font-size: 1.8rem;
+    font-weight: 400;
+    margin-bottom: 3.2rem;
+    margin-left: 2rem;
+}
+
+.STARTER-detail {
+    margin-bottom: 8rem;
+}
+
+.VALUE {
+    margin: 0 2.5rem;
+    padding: 6rem 7.7rem;
+    border: 2px solid white;
+}
+
+.VALUE p {
+    color: var(--secondary-color);
+    text-align: center;
+    font-size: 2.4rem;
+    font-weight: 700;
+    text-transform: uppercase;
+}
+
+.VALUE h3 {
+    color: var(--secondary-color);
+    font-size: 7.2rem;
+    font-weight: 700;
+    text-transform: uppercase;
+    margin: 3rem 0;
+}
+
+.VALUE .month {
+    color: var(--secondary-color);
+    font-size: 2.4rem;
+    font-weight: 600;
+    text-transform: uppercase;
+    margin: 3rem 0;
+
+}
+
+.VALUE-detail img {
+    margin-bottom: 2rem;
+}
+
+.VALUE-detail span {
+    display: inline-block;
+    color: var(--secondary-color);
+    font-size: 1.8rem;
+    font-weight: 400;
+    margin-bottom: 3.2rem;
+    margin-left: 2rem;
+}
+
+.VALUE-detail {
+    margin-bottom: 8rem;
+}
+
+.PREMIUM {
+    margin-left: 5rem;
+    padding: 6rem 7.7rem;
+    border: 2px solid white;
+}
+
+.PREMIUM p {
+    color: var(--secondary-color);
+    text-align: center;
+    font-size: 2.4rem;
+    font-weight: 700;
+    text-transform: uppercase;
+}
+
+.PREMIUM h3 {
+    color: var(--secondary-color);
+    font-size: 7.2rem;
+    font-weight: 700;
+    text-transform: uppercase;
+    margin: 3rem 0;
+}
+
+.PREMIUM .month {
+    color: var(--secondary-color);
+    font-size: 2.4rem;
+    font-weight: 600;
+    text-transform: uppercase;
+    margin: 3rem 0;
+
+}
+
+.PREMIUM-detail img {
+    margin-bottom: 2rem;
+}
+
+.PREMIUM-detail span {
+    display: inline-block;
+    color: var(--secondary-color);
+    font-size: 1.8rem;
+    font-weight: 400;
+    margin-bottom: 3.2rem;
+    margin-left: 2rem;
+}
+
+.PREMIUM-detail {
+    margin-bottom: 8rem;
+}
+
+.STARTER:hover {
+    background-color: var(--primary-color);
+    border: none;
+}
+
+.STARTER:hover .comman-but {
+    background-color: var(--secondary-color);
+    color: var(--primary-color);
+    font-weight: bold;
+
+}
+
+.VALUE:hover {
+    background-color: var(--primary-color);
+    border: none;
+}
+
+.VALUE:hover .comman-but {
+    background-color: var(--secondary-color);
+    color: var(--primary-color);
+    font-weight: bold;
+
+}
+
+.PREMIUM:hover {
+    background-color: var(--primary-color);
+    border: none;
+}
+
+.PREMIUM:hover .comman-but {
+    background-color: var(--secondary-color);
+    color: var(--primary-color);
+    font-weight: bold;
+
+}
+
+/* ******************************************************* */
+
+/* *******************Happy******************* */
+#HAPPY {
+    background: linear-gradient(180deg, #000 36.84%, #C8191C 223.16%);
+}
+
+.happy-title h2 {
+    color: var(--secondary-color);
+    font-size: 14rem;
+    font-weight: 700;
+    margin-bottom: 10rem;
+}
+
+#HAPPY .mySwiper {
+    padding: 15rem 7.5rem 0;
+}
+
+.happy-desc {
+    padding: 0 10.2rem;
+}
+
+.happy-img img {
+    width: 100%;
+    height: 63.1rem;
+    object-fit: cover;
+}
+
+.happy-desc .happy-data {
+    text-align: left;
+    position: relative;
+}
+
+.happy-desc .happy-data::after {
+    content: '';
+    position: absolute;
+    inset: 0;
+    background-image: url(../images/happu-pic.png);
+    background-repeat: no-repeat;
+    opacity: 999;
+    top: -4.8rem;
+    left: -2.5rem;
+}
+
+.happy-desc .happy-data p {
+    color: var(--secondary-color);
+    font-size: 18px;
+    font-weight: 400;
+    margin-top: 7.7rem;
+}
+
+.happy-desc .happy-data h5 {
+    font-size: 24px;
+    font-style: normal;
+    font-weight: 400;
+    color: var(--secondary-color);
+}
+
+.swiper-button-prev {
+    color: var(--secondary-color);
+}
+
+.swiper-button-next {
+    color: var(--secondary-color);
+}
+
+/* ******************************************************* */
+
+/* ***********************BLOG************************* */
+#BLOG {
+    background: linear-gradient(0deg, #000 16.49%, #C8191C 274.79%);
+}
+
+#BLOG .main-title {
+    text-align: center;
+}
+
+#BLOG .sub-title {
+    text-align: center;
+}
+
+.blog-detail {
+    margin-top: 6.2rem;
+}
+.blog-data {
+    padding: 0 2rem;
+}
+
+.blog-data img {
+    width: 100%;
+    height: 47.8rem;
+    object-fit: cover;
+}
+
+.blog-data h3 {
+    color: var(--secondary-color);
+    font-size: 2.4rem;
+    font-weight: 700;
+    text-transform: uppercase;
+    margin-top: 5rem;
+
+}
+
+.blog-data>li>a {
+    display: inline-block;
+    color: var(--secondary-color);
+    font-size: 1.8rem;
+    font-weight: 400;
+    margin-top: 2rem;
+}
+
+.blog-data>li>a:hover {
+    color: var(--primary-color);
+}
+
+.blog-data span {
+    color: #0786f8;
+}
+
+/* ******************************************************* */
+
+/* ***********************FOOTER************************* */
+footer {
+    background: linear-gradient(180deg, #000 36.84%, #C8191C 223.16%);
+    padding: 20rem 0;
+}
+
+.footer-detail {
+    padding-top: 8rem;
+    border-top: 0.2rem solid white;
+    border-bottom: 0.1rem solid white;
+}
+
+.foot-data p {
+    color: var(--secondary-color);
+    font-size: 1.8rem;
+    font-weight: 400;
+    margin-top: 2rem;
+}
+
+.foot-data h3 {
+    color: var(--secondary-color);
+    font-size: 3.2rem;
+    font-weight: 700;
+    text-transform: uppercase;
+    margin-left: 2.2rem;
+
+}
+
+.foot-data>ul>li>a {
+    display: inline-block;
+    color: var(--secondary-color);
+    font-size: 1.8rem;
+    font-weight: 400;
+    margin-top: 2rem;
+}
+
+.foot-data>ul>li>a i {
+    padding-right: 2rem;
+}
+
+.foot-data .map {
+    width: 100%;
+    height: 18.5rem;
+    object-fit: cover;
+}
+
+footer .last-data {
+    margin-top: 8rem;
+    margin-bottom:4.5rem;
+    text-align: center;
+    color: var(--secondary-color);
+    font-size: 1.8rem;
+    font-weight: 400;
+}
+.foot-data>ul>li>a:hover {
+    color: #C8191C;
+}
